@@ -8,7 +8,7 @@
     $tipe = $_POST['tipe'];
 
     if($tipe=="1"){
-        $update = mysqli_query($koneksi, "UPDATE tb_user SET level_user='$level', username='$username', passwd='$password' WHERE id_user='$id'");
+        $update = mysqli_query($koneksi, "UPDATE tb_user SET nama_user='$nama',level='$level', username='$username', password='$password' WHERE id_user='$id'");
         $pesan = "berhasil";
     }
     if($tipe=="2"){
